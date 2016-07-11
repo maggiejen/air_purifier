@@ -1,30 +1,30 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en" style="height:100%;" wp-site wp-site-is-master-page>
-    <head> 
-        <meta charset="utf-8"> 
+    <head>
+        <meta charset="utf-8">
         <title>Pinegrow Bootstrap Blocks</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="pinegrow, blocks, bootstrap" />
         <meta name="description" content="My new website" />
-        <link rel="shortcut icon" href="ico/favicon.png"> 
-        <!-- Core CSS -->         
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+        <link rel="shortcut icon" href="ico/favicon.png">
+        <!-- Core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
-        <!-- Style Library -->         
+        <!-- Style Library -->
         <link href="css/style-library-1.css" rel="stylesheet">
         <link href="css/plugins.css" rel="stylesheet">
         <link href="css/blocks.css" rel="stylesheet">
         <link href="css/custom.css" rel="stylesheet">
         <link href="css/eql_temp.css" rel="stylesheet">
         <link rel="stylesheet" media="screen and (min-width: 400px) and (max-width: 700px)" href="css/eql_screen.css">
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->         
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
         <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
-    <![endif]-->         
-    </head>     
+    <![endif]-->
+    </head>
     <body data-spy="scroll" data-target="nav">
         <header id="header">
             <!-- Navbar -->
@@ -46,13 +46,13 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a href="#" data-id="how">How it work <span class="sr-only">(current)</span></a>
+                                <a href="#" data-id="how" id="lang_navlink1">How it work <span class="sr-only">(current)</span></a>
                             </li>
                             <li>
-                                <a href="#" data-id="load">Download</a>
+                                <a href="#" data-id="load" id="lang_navlink2">Download</a>
                             </li>
                             <li>
-                                <a href="#" data-id="spec">Product Spec</a>
+                                <a href="#" data-id="spec" id="lang_navlink3">Product Spec</a>
                             </li>
                             <!--  <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -76,8 +76,22 @@
                                   </li>
                               </ul>
                           </li>-->
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="change_dropdown_title">EN - English<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" onclick="chg_lang(0)">TW - 繁體中文</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="chg_lang(1)">EN - English</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="chg_lang(2)">JP - 日本語</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li>
-                                <button type="button" value="order" onclick="window.open('https://www.91app.com/')" class="btn button navbar-btn btn_order">Order</button>
+                                <button type="button" value="order" onclick="window.open('https://www.91app.com/')" class="btn button navbar-btn btn_order" id="lang_navlink4">Order</button>
                             </li>
                         </ul>
                     </div>
@@ -121,8 +135,8 @@
         </div>
         <section id="content-2-1" class="content-block content-2-1 bg-deepocean">
             <div class="container text-center">
-                <a href="#" class="btn btn-outline btn-outline-xl outline-light" wp-cz-control="blocks_content_2_1_button_label" wp-cz-control-label="Button Label" wp-cz-control-section="blocks_content_2_1" wp-cz-theme-mod="blocks_content_2_1_button_label" wp-cz-control-2="blocks_content_2_1_button_url" wp-cz-control-label-2="Button Link" wp-cz-control-section-2="blocks_content_2_1" wp-cz-theme-mod-attr="blocks_content_2_1_button_url" wp-cz-theme-mod-attr-set-attr="href"><span class="fa fa-heart pomegranate"></span>Pre-Order</a>
-                <h2>*Add $15 for international shipping. Additional sales tax may apply. Pre-orders will start shipping in July 2016 on a first-come, first-served basis.</h2>
+                <a href="#" class="btn btn-outline btn-outline-xl outline-light" id="lang_preordertext1" wp-cz-control="blocks_content_2_1_button_label" wp-cz-control-label="Button Label" wp-cz-control-section="blocks_content_2_1" wp-cz-theme-mod="blocks_content_2_1_button_label" wp-cz-control-2="blocks_content_2_1_button_url" wp-cz-control-label-2="Button Link" wp-cz-control-section-2="blocks_content_2_1" wp-cz-theme-mod-attr="blocks_content_2_1_button_url" wp-cz-theme-mod-attr-set-attr="href"><span class="fa fa-heart pomegranate"></span>Pre-Order</a>
+                <h2 id="lang_preordertext2">*Add $15 for international shipping. Additional sales tax may apply. Pre-orders will start shipping in July 2016 on a first-come, first-served basis.</h2>
             </div>
             <!-- /.container -->
         </section>
@@ -130,9 +144,9 @@
             <div class="underlined-title">
                 <h1>HOW IT WORK</h1>
                 <hr>
-                <h3 color="#1D2088">內建藍牙模組</h3>
-                <h3>透過手機APP進行遠端操作</h3>
-                <p>* Room Hub is required to enable Cloud service and remote access</p>
+                <h3 style="color: #1D2088" id="lang_howitworktext1">內建藍牙模組</h3>
+                <h3 id="lang_howitworktext2">透過手機APP進行遠端操作</h3>
+                <p id="lang_howitworktext3">* Room Hub is required to enable Cloud service and remote access</p>
             </div>
         </section>
         <section id="content-1-3" class="content-block content-1-3">
@@ -142,28 +156,28 @@
                         <div class="underlined-title">
                             <h1>HOW IT WORK</h1>
                             <hr>
-                            <h3 color="#1D2088">空氣品質指示燈</h3>
-                            <h3>隨時檢測空氣質量情況，即時了解空氣狀況</h3>
+                            <h3 style="color: #1D2088" id="lang_howitworktext4">空氣品質指示燈</h3>
+                            <h3 id="lang_howitworktext5">隨時檢測空氣質量情況，即時了解空氣狀況</h3>
                         </div>
                         <div class="services-wrapper">
                             <div class="col-md-4 wp-loop-skip">
                                 <img src="images/red_light.png">
-                                <h4 wp-the-title>紅燈-空氣不適宜</h4>
+                                <h4 wp-the-title id="lang_howitworktext6">紅燈-空氣不適宜</h4>
                             </div>
                             <div class="col-md-4" wp-loop-skip>
                                 <img src="images/orange_light.png">
-                                <h4>橘燈-空氣改善中</h4>
+                                <h4 id="lang_howitworktext7">橘燈-空氣改善中</h4>
                                 <p></p>
                             </div>
                             <div class="col-md-4" wp-loop-skip>
                                 <img src="images/green_light.png">
-                                <h4>綠燈-新鮮空氣</h4>
+                                <h4 id="lang_howitworktext8">綠燈-新鮮空氣</h4>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4"> 
+                    <div class="col-md-4">
 </div>
                     <img src="images/air_purifier_pic.png" class="img-responsive center-block">
                 </div>
@@ -178,8 +192,8 @@
                         <div class="underlined-title">
                             <h1>HOW IT WORK</h1>
                             <hr>
-                            <h3 color="#1D2088">多重過濾淨化空氣</h3>
-                            <p>12層過濾功能技術，全面去除空氣中各種細菌異味高效抗菌HEPA-13濾網，過濾殺菌率高達99.97％</p>
+                            <h3 style="color: #1D2088" id="lang_howitworktext9">多重過濾淨化空氣</h3>
+                            <p id="lang_howitworktext10">12層過濾功能技術，全面去除空氣中各種細菌異味高效抗菌HEPA-13濾網，過濾殺菌率高達99.97％</p>
                         </div>
                         <div class="services-wrapper">
 </div>
@@ -195,22 +209,22 @@
         <section id="load" class="content-block team-1 team-1-1">
             <div class="container">
                 <div class="underlined-title">
-                    <h1>DOWNLOAD</h1>
+                    <h1 id="lang_downloadtext1">DOWNLOAD</h1>
                     <hr>
-                    <h3 color="#1D2088">遠端操作需搭配EQL智能小管家連結使用</h3>
+                    <h3 color="#1D2088" id="lang_downloadtext2">遠端操作需搭配EQL智能小管家連結使用</h3>
                     <p></p>
                     <img src="images/eql_h60_icon.png" />
-                    <h3>智能小管家<br>
+                    <h3 id="lang_downloadtext3">智能小管家<br>
 RoomHub App</h3>
                 </div>
                 <div class="col-md-12">
                     <div class="col-sm-4 team-member-wrap">
                         <div class="team-member">
                             <div class="team-details">
-                                <h4 class="member-name">Android</h4>
-                                <p class="position" wp-meta-value wp-meta-value-key="position" wp-if-get-post-meta="|position">支援Android 4.4及以上的版本</p>
+                                <h4 class="member-name" id="lang_downloadtext4">Android</h4>
+                                <p class="position" id="lang_downloadtext5">支援Android 4.4及以上的版本</p>
                                 <p class="position"><img src="images/android_qrcode_icon.jpg" /></p>
-                                <a href="#" target="_blank" class="btn btn-block button">按此下載</a>
+                                <a href="#" target="_blank" class="btn btn-block button" id="lang_downloadtext6">按此下載</a>
                                 <!-- /.social -->
                             </div>
                         </div>
@@ -219,10 +233,10 @@ RoomHub App</h3>
                     <div class="col-sm-4 team-member-wrap">
                         <div class="team-member">
                             <div class="team-details">
-                                <h4 class="member-name">iOS</h4>
-                                <p class="position">支援iOS 8.4及以上的版本</p>
+                                <h4 class="member-name" id="lang_downloadtext7">iOS</h4>
+                                <p class="position" id="lang_downloadtext8">支援iOS 8.4及以上的版本</p>
                                 <p class="position"><img src="images/apple_qrcode_icon.jpg" /></p>
-                                <a href="#" target="_blank" class="btn btn-block button">按此下載</a>
+                                <a href="#" target="_blank" class="btn btn-block button" id="lang_downloadtext6">按此下載</a>
                                 <!-- /.social -->
                             </div>
                         </div>
@@ -231,9 +245,9 @@ RoomHub App</h3>
                     <div class="col-sm-4 team-member-wrap">
                         <div class="team-member">
                             <div class="team-details">
-                                <h4 class="member-name">Windows</h4>
-                                <p class="position">支援Windows 8, 10</p>
-                                <p>僅可安裝於和小家電使用相同室內網路的Lemel電腦棒</p>
+                                <h4 class="member-name" id="lang_downloadtext9">Windows</h4>
+                                <p class="position" id="lang_downloadtext10">支援Windows 8, 10</p>
+                                <p id="lang_vdownloadtext11">僅可安裝於和小家電使用相同室內網路的Lemel電腦棒</p>
                                 <h3> </h3>
                                 <ul class="social social-dark">
                                     <li>
@@ -254,7 +268,7 @@ RoomHub App</h3>
                                     <li>
                                         <a href="#"></a>
                                     </li>
-                                    <a href="#" target="_blank" class="btn btn-block button">按此下載</a>
+                                    <a href="#" target="_blank" class="btn btn-block button" id="lang_downloadtext6">按此下載</a>
                                 </ul>
                                 <!-- /.social -->
                             </div>
@@ -270,7 +284,7 @@ RoomHub App</h3>
             <div class="container">
                 <div class="col-sm-12">
                     <div class="underlined-title">
-                        <h1>PRODUCT SPEC</h1>
+                        <h1 id="product_spec" id="lang_spectext1">PRODUCT SPEC</h1>
                         <hr>
                         <p></p>
                         <div class="container">
@@ -280,61 +294,61 @@ RoomHub App</h3>
                                         <table class="table table-striped table-hover cartTable" width="100%" border="0" cellspacing="0">
                                             <thead>
                                                 <tr>
-                                                    <th class="item_name">Item</th>
-                                                    <th class="item_price">Description</th>
+                                                    <th class="item_name" id="lang_tabletitle1">Item</th>
+                                                    <th class="item_price" id="lang_tabletitle1">Description</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr class="cart_item">
-                                                    <td class="item_name">Power requirements</td>
-                                                    <td class="item_price">110V~220V, 60HZ</td>
+                                                    <td class="item_name" id="lang_tabletitle1">Power requirements</td>
+                                                    <td class="item_price" id="lang_tabletitle2">110V~220V, 60HZ</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name">Energy consumption</td>
-                                                    <td class="item_price">34W</td>
+                                                    <td class="item_name" id="lang_tabletitle3">Energy consumption</td>
+                                                    <td class="item_price" id="lang_tabletitle4">34W</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name">Number of Speed Settings</td>
-                                                    <td class="item_price">1~9</td>
+                                                    <td class="item_name" id="lang_tabletitle5">Number of Speed Settings</td>
+                                                    <td class="item_price" id="lang_tabletitle6">1~9</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name">HEPA Level</td>
-                                                    <td class="item_price">HEPA-13</td>
+                                                    <td class="item_name" id="lang_tabletitle7">HEPA Level</td>
+                                                    <td class="item_price" id="lang_tabletitle8">HEPA-13</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name">Clean Air Delivery Rate</td>
-                                                    <td class="item_price">150 CFM (cubic feet per minute)</td>
+                                                    <td class="item_name" id="lang_tabletitle9">Clean Air Delivery Rate</td>
+                                                    <td class="item_price" id="lang_tabletitle10">150 CFM (cubic feet per minute)</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name">Auto mode (air quality detection)</td>
-                                                    <td class="item_price">Yes</td>
+                                                    <td class="item_name" id="lang_tabletitle11">Auto mode (air quality detection)</td>
+                                                    <td class="item_price" id="lang_tabletitle12">Yes</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name">Filter monitor</td>
-                                                    <td class="item_price">Yes</td>
+                                                    <td class="item_name" id="lang_tabletitle13">Filter monitor</td>
+                                                    <td class="item_price" id="lang_vtabletitle14">Yes</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name">Deodorization</td>
-                                                    <td class="item_price">Yes</td>
+                                                    <td class="item_name" id="lang_tabletitle15">Deodorization</td>
+                                                    <td class="item_price" id="lang_tabletitle16">Yes</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name">Ultra Violet (UV) Bulb</td>
-                                                    <td class="item_price">Yes</td>
+                                                    <td class="item_name" id="lang_vtabletitle17">Ultra Violet (UV) Bulb</td>
+                                                    <td class="item_price" id="lang_tabletitle18">Yes</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name">Connectivity</td>
-                                                    <td class="item_price">BLE, remote controller</td>
+                                                    <td class="item_name" id="lang_tabletitle19">Connectivity</td>
+                                                    <td class="item_price" id="lang_vvtabletitle20">BLE, remote controller</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name">Dimension</td>
-                                                    <td class="item_price">415mm(W) x 188mm (L) x 540mm (H)</td>
+                                                    <td class="item_name" id="lang_vtabletext21">Dimension</td>
+                                                    <td class="item_price" id="lang_tabletext22">415mm(W) x 188mm (L) x 540mm (H)</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name">Weight</td>
-                                                    <td class="item_price">6.5 KG</td>
+                                                    <td class="item_name" id="lang_tabletext23">Weight</td>
+                                                    <td class="item_price" id="lang_tabletext24">6.5 KG</td>
                                                 </tr>
                                             </tbody>
-                                        </table>                                         
+                                        </table>
                                 </div>
                             </div>
         </section>
@@ -419,11 +433,11 @@ RoomHub App</h3>
 		  }else{
 		  $('.navbar').removeClass('fixed-strip');
 		  }
-		  }); 
+		  });
 		</script>
         <script type="text/javascript">
 		  $(function(){
-	  
+
 			  $("#gotop").click(function(){
 				  jQuery("html,body").animate({
 					  scrollTop:0
@@ -436,23 +450,26 @@ RoomHub App</h3>
 					  $('#gotop').stop().fadeOut("fast");
 				  }
 			  });
-	  
-	  
+
+
 			 var $body = $('html,body');
-	   
+
 		  $('.nav li a').click(function(){
 			  var location = $(this).data('id').toLowerCase();
 			  $body.animate({scrollTop: $("#"+location).offset().top}, {duration:1200});
 			  return false;
 			});
-			
+
 		  });
-	  
+
 		  </script>
-        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>         
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>         
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
         <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
-        <script type="text/javascript" src="js/bskit-scripts.js"></script>         
-    </body>     
+        <script type="text/javascript" src="js/bskit-scripts.js"></script>
+        <!--<script src="js/jquery-1.4.4.js"></script>-->
+        <!--<script src="js/pic360-1.0.0.js"></script>-->
+        <script type="text/javascript" src="js/J_S_Multi_language_LT_v0.9.js"></script>         
+    </body>
 </html>
