@@ -5,7 +5,7 @@
   "lang_navlink2":"下載支援",
   "lang_navlink3":"產品規格",
   "lang_navlink4":"購買",
-  "lang_preordertext1":"Pre-Order",
+  "lang_preordertext1":"搶先預購",
   "lang_preordertext2":"*Add $15 for international shipping. Additional sales tax may apply. Pre-orders will start shipping in July 2016 on a first-come, first-served basis.",
   "lang_howitworktext1":"內建藍芽模組",
   "lang_howitworktext2":"透過手機APP進行遠端操作",
@@ -29,7 +29,7 @@
   "lang_downloadtext9":"Windows",
   "lang_downloadtext10":"支援Windows 8, 10",
   "lang_downloadtext11":"僅可安裝於和小家電使用相同室內網路的Lemel電腦棒",
-  "lang_spectext1":"PRODUCT SPEC"
+  "lang_spectext1":"PRODUCT SPEC",
   "lang_tabletitle1":"空氣清淨機",
   "lang_tabletext1":"電源",
   "lang_tabletext2":"110V~220V, 60HZ",v
@@ -59,10 +59,10 @@
   },
     {
     "lang_title":"Welcome to EQL- AIR PURIFIER",
-    "lang_navlink1":"A功能特色",
-    "lang_navlink2":"A下載支援",
-    "lang_navlink3":"A產品規格",
-    "lang_navlink4":"A購買",
+    "lang_navlink1":"HOW IT WORK",
+    "lang_navlink2":"DOWNLOAD",
+    "lang_navlink3":"PRODUCT SPEC",
+    "lang_navlink4":"ORDER",
     "lang_preordertext1":"Pre-Order",
     "lang_preordertext2":"*Add $15 for international shipping. Additional sales tax may apply. Pre-orders will start shipping in July 2016 on a first-come, first-served basis.",
     "lang_howitworktext1":"A內建藍芽模組",
@@ -87,7 +87,7 @@
     "lang_downloadtext9":"Windows",
     "lang_downloadtext10":"A支援Windows 8, 10",
     "lang_downloadtext11":"A僅可安裝於和小家電使用相同室內網路的Lemel電腦棒",
-    "lang_spectext1":"PRODUCT SPEC"
+    "lang_spectext1":"PRODUCT SPEC",
     "lang_tabletitle1":"A空氣清淨機",
     "lang_tabletext1":"A電源",
     "lang_tabletext2":"A110V~220V, 60HZ",
@@ -145,7 +145,7 @@
       "lang_downloadtext9":"JWindows",
       "lang_downloadtext10":"J支援Windows 8, 10",
       "lang_downloadtext11":"J僅可安裝於和小家電使用相同室內網路的Lemel電腦棒",
-      "lang_spectext1":"JPRODUCT SPEC"
+      "lang_spectext1":"JPRODUCT SPEC",
       "lang_tabletitle1":J"空氣清淨機",
       "lang_tabletext1":"J電源",
       "lang_tabletext2":"J110V~220V, 60HZ",
