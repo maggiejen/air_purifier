@@ -172,5 +172,5 @@
       "lang_tabletext23":"J機體重量",
       "lang_tabletext24":"J6.5 KG"
 
-      },
+      }
       ]
