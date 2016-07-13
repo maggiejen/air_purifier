@@ -1,0 +1,82 @@
+/* EQL Template_last updated 2016-06-22 */
+
+.DOWNLOAD{
+  padding: 100px 0;
+
+}
+.DOWNLOAD_BOX{
+  display: block;
+/*  margin: 30px 0px;*/
+/*border: 1px solid #00AEEF;*/
+  padding: 30px 15px ;
+}
+.DOWNLOAD_BOX img{
+  margin: 0 auto;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+.DOWNLOAD_BOX p{
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+  font-family: å¾®è»Ÿæ­£é»‘é«”;
+  padding-bottom: 40px;
+}
+.DOWNLOAD_BOX .p1{
+  text-align: center;
+  font-size: 18px;
+  line-height: 50px;
+  font-family: å¾®è»Ÿæ­£é»‘é«”;
+
+}
+
+.DOWNLOAD_BOX .p2{
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: å¾®è»Ÿæ­£é»‘é«”;
+  padding: 0 50px;
+  color: #808285;
+}
+
+.DOWNLOAD_BOX h2{
+font-weight:bolder;
+color: #00C0F3;
+text-align: center;
+
+}
+　.DOWNLOAD_BOX a{
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+.BUTTON_BOX{
+  margin:0 auto;
+  display:block;
+  background:#00C0F3;
+  border-radius:0px;
+  color:#FFFFFF;
+
+  margin-top: 20px;
+
+  font-size:1.3em;
+  font-weight:400;
+  letter-spacing:0.2em;
+  text-align: center;
+  padding:0.7em 0;
+  text-decoration:none;
+  text-transform:uppercase;
+  transition:background 0.3s ease-in-out;
+
+
+}
+
+.DOWNLOAD_BOX a:hover{
+    display:block;
+background-color:#3C55A4;
+color:#00C0F3;
+
+}
