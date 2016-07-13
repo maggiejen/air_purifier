@@ -18,6 +18,7 @@
         <link href="css/blocks.css" rel="stylesheet">
         <link href="css/custom.css" rel="stylesheet">
         <link href="css/eql_temp.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" media="screen and (min-width: 400px) and (max-width: 700px)" href="css/eql_screen.css">
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
         <!--[if lt IE 9]>
@@ -25,7 +26,7 @@
       <script src="js/respond.min.js"></script>
 <![endif]-->
     </head>
-    <body data-spy="scroll" data-target="nav">
+    <body data-spy="scroll" data-target="nav" class="detectUserLang()">
         <header id="header">
             <!-- Navbar -->
             <nav class="navbar navbar-inverse nav_spec" role="navigation" data-spy="affix" data-offset-top="500">
@@ -46,28 +47,30 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a href="#" data-id="how" id="lang_navlink1">How it work <span class="sr-only">(current)</span></a>
+                                <a href="#" data-id="how" id="lang_navlink1">功能特色<span class="sr-only">(current)</span></a>
                             </li>
                             <li>
-                                <a href="#" data-id="load" id="lang_navlink2">Download</a>
+                                <a href="#" data-id="load" id="lang_navlink2">下載支援</a>
                             </li>
                             <li>
-                                <a href="#" data-id="spec" id="lang_navlink3">Product Spec</a>
+                                <a href="#" data-id="spec" id="lang_navlink3">產品規格</a>
                             </li>
+                            <!--
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="change_dropdown_title">EN - English<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#" onclick="chg_lang(0)">TW - 繁體中文</a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="change_dropdown_title" data-pg-id="334">EN - English<b class="caret" data-pg-id="335"></b></a>
+                                <ul class="dropdown-menu" data-pg-id="336">
+                                    <li data-pg-id="337">
+                                        <a href="#" onclick="chg_lang(0)" data-pg-id="338">TW - 繁體中文</a>
                                     </li>
-                                    <li>
-                                        <a href="#" onclick="chg_lang(1)">EN - English</a>
+                                    <li data-pg-id="339">
+                                        <a href="#" onclick="chg_lang(1)" data-pg-id="340">EN - English</a>
                                     </li>
-                                    <li>
-                                        <a href="#" onclick="chg_lang(2)">JP - 日本語</a>
+                                    <li data-pg-id="341">
+                                        <a href="#" onclick="chg_lang(2)" data-pg-id="342">JP - 日本語</a>
                                     </li>
                                 </ul>
                             </li>
+-->
                             <li>
                                 <button type="button" value="order" onclick="window.open('https://www.91app.com/')" class="btn button navbar-btn btn_order" id="lang_navlink4">Order</button>
                             </li>
@@ -120,7 +123,7 @@
         </section>
         <section id="how" class="content-block content-1-1 min-height-800px bg-white">
             <div class="underlined-title">
-                <h1>HOW IT WORK</h1>
+                <h1> &nbsp;&nbsp;&nbsp;&nbsp;</h1>
                 <hr>
                 <h3 style="color: #1D2088" id="lang_howitwork_ap_title">內建藍牙模組</h3>
                 <h4 id="lang_howitwork_ap_cont">透過手機APP進行遠端操作</h4>
@@ -187,94 +190,48 @@
         <section id="load" class="content-block team-1 team-1-1">
             <div class="container">
                 <div class="underlined-title">
-                    <h1 id="lang_download_title">DOWNLOAD</h1>
+                    <h1 id="lang_download_title">&nbsp;&nbsp;&nbsp;<br>DOWNLOAD</h1>
                     <hr>
                     <p></p>
                     <img src="images/download_title.jpg" />
                 </div>
+                <div class="row">
+                    <div class="col-md-4 DOWNLOAD_BOX">
+                        <div style="border: 1px solid #00AEEF; background-color:white; border-radius:0px;">
+                            <img src="images/download_icon01.jpg" class="img-responsive">
+                            <img src="images/download_qr01.jpg" class="img-responsive">
+                            <h2 id="lang_download_appstore_title">Android</h2>
+                            <p id="lang_download_appstore_cont">支援Android 4.4及以上版本</p>
+                            <a href="#" target="_blank" class="BUTTON_BOX" style="margin-top:20px;" id="lang_download_storebutton_text">下載</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 DOWNLOAD_BOX">
+                        <div style="border: 1px solid #00AEEF; background-color:white; border-radius:0px;">
+                            <img src="images/download_icon02.jpg" class="img-responsive">
+                            <img src="images/download_qr01.jpg" class="img-responsive">
+                            <h2 id="lang_download_iostore_title">Iphone</h2>
+                            <p id="lang_download_iostore_cont">支援iOS 8.4及以上版本</p>
+                            <a href="#" target="_blank" class="BUTTON_BOX" style="margin-top:20px;" id="lang_download_storebutton_text">下載</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 DOWNLOAD_BOX">
+                        <div style="border: 1px solid #00AEEF; background-color:white; border-radius:0px;">
+                            <img src="images/download_icon03.jpg" class="img-responsive">
+                            <img src="images/download_qr01.jpg" class="img-responsive">
+                            <h2 id="lang_download_wstore_title">Windows</h2>
+                            <div class="p1" id="lang_download_wstore_subtitle">支援Windows 8 &amp; 10</div>
+                            <div class="p2" id="lang_download_wstore_cont">僅可安裝於和小管家使用相同室內網路的 Lemel 智慧電腦棒</div>
+                            <a href="#" target="_blank" class="BUTTON_BOX" style="margin-top:20px;" id="lang_download_storebutton_text">下載</a>
+                        </div>
+                    </div>
+                </div>                 
                 <div class="col-md-12">
                     <div class="col-sm-4 team-member-wrap">
                         <div class="team-member">
-                            <div class="team-details" style="border:0px solid #00AEEF; background-color:white; border-radius:0px;">
-                                <p class="position"><img src="images/download_icon01.jpg" /></p>
-                                <p class="position"><img src="images/download_qr01.jpg" /></p>
-                                <h4 class="member-name" id="lang_download_appstore_title">Android</h4>
-                                <p class="position" id="lang_download_appstore_cont">支援Android 4.4及以上的版本</p>
-                                <ul class="social social-dark">
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <a href="#" target="_blank" class="btn btn-block button" id="lang_download_storebutton_text">按此下載</a>
-                                </ul>                                 
-                                <!-- /.social -->
-                            </div>
-                        </div>
+</div>
                     </div>
                     <!-- /.team-member-wrap -->
-                    <div class="col-sm-4 team-member-wrap">
-                        <div class="team-member">
-                            <div class="team-details" style="border:0px solid #00AEEF; background-color:white; border-radius:0px;">
-                                <p class="position"><img src="images/download_icon02.jpg" /></p>
-                                <p class="position"><img src="images/download_qr01.jpg" /></p>
-                                <h4 class="member-name" id="lang_download_iostore_titlle">iOS</h4>
-                                <p class="position" id="lang_download_iostore_cont">支援iOS 8.4及以上的版本</p>
-                                <ul class="social social-dark">
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>                                     
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                    <a href="#" target="_blank" class="btn btn-block button" id="lang_download_storebutton_text">按此下載</a>
-                                </ul>
-                                <!-- /.social -->
-                            </div>
-                        </div>
-                    </div>
                     <!-- /.team-member-wrap -->
-                    <div class="col-sm-4 team-member-wrap">
-                        <div class="team-member">
-                            <div class="team-details" style="border:0px solid #00AEEF; background-color:white; border-radius:0px;">
-                                <p class="position"><img src="images/download_icon03.jpg" /></p>
-                                <p class="position"><img src="images/download_qr01.jpg" /></p> 
-                                <h4 class="member-name" id="lang_download_wstore_title">Windows</h4>
-                                <p class="position" id="lang_download_wstore_subtitle">支援Windows 8, 10</p>
-                                <p id="lang_download_wstore_cont">僅可安裝於和小家電使用相同室內網路的Lemel電腦棒</p>
-                                <a href="#" target="_blank" class="btn btn-block button" id="lang_download_storebutton_text">按此下載</a>
-                                <!-- /.social -->
-                            </div>
-                        </div>
-                    </div>
                     <!-- /.team-member-wrap -->
                 </div>
                 <!-- /.row -->
@@ -285,10 +242,10 @@
             <div class="container">
                 <div class="col-sm-12">
                     <div class="underlined-title">
-                        <h1 id="product_spec" id="lang_air_spec">PRODUCT SPEC</h1>
+                        <h1 id="product_spec" id="lang_air_spec">&nbsp;&nbsp;&nbsp;<br>PRODUCT SPEC</h1>
                         <hr>
                         <p></p>
-                        <h3 id="product_spec" id="lang_spec_title">Air Purifier</h3>
+                        <h3 id="product_spec" id="lang_spec_title">DC變頻空氣清淨機</h3>
                         <div class="container">
                             <div class="col-sm-12">
                                 <div class="underlined-title">
@@ -303,57 +260,61 @@
    </thead><-->
                                             <tbody>
                                                 <tr class="cart_item">
-                                                    <td class="item_name" id="lang_spec_power">Power requirements</td>
+                                                    <td class="item_name" id="lang_spec_power">電源</td>
                                                     <td class="item_price" id="lang_spec_power_cont">110V~220V, 60HZ</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name" id="lang_spec_energy">Energy consumption</td>
+                                                    <td class="item_name" id="lang_spec_energy">消耗電功率</td>
                                                     <td class="item_price" id="lang_spec_energy_cont">34W</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name" id="lang_spec_speed">Number of Speed Settings</td>
+                                                    <td class="item_name" id="lang_spec_speed">多段風速</td>
                                                     <td class="item_price" id="lang_spec_speed_cont">1~9</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name" id="lang_spec_hepa">HEPA Level</td>
+                                                    <td class="item_name" id="lang_spec_hepa">濾網種類</td>
                                                     <td class="item_price" id="lang_spec_hepa_cont">HEPA-13</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name" id="lang_spec_clearnair">Clean Air Delivery Rate</td>
-                                                    <td class="item_price" id="lang_spec_cleanair_cont">150 CFM (cubic feet per minute)</td>
+                                                    <td class="item_name" id="lang_spec_clearnair">潔淨風量值</td>
+                                                    <td class="item_price" id="lang_spec_cleanair_cont">高效率三合一HEPA濾網</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name" id="lang_spec_automode">Auto mode (air quality detection)</td>
+                                                    <td class="item_name" id="lang_spec_automode">變速空氣品質自動偵測</td>
                                                     <td class="item_price" id="lang_spec_automode_cont">Yes</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name" id="lang_spec_filter">Filter monitor</td>
+                                                    <td class="item_name" id="lang_spec_filter">濾網壽命指示燈</td>
                                                     <td class="item_price" id="lang_spec_filter_cont">Yes</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name" id="lang_spec_deodorization">Deodorization</td>
+                                                    <td class="item_name" id="lang_spec_deodorization">除臭盒</td>
                                                     <td class="item_price" id="lang_spec_deodorization_cont">Yes</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name" id="lang_spec_uv">Ultra Violet (UV) Bulb</td>
+                                                    <td class="item_name" id="lang_spec_uv">UV燈</td>
                                                     <td class="item_price" id="lang_spec_uv_cont">Yes</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name" id="lang_spec_connect">Connectivity</td>
-                                                    <td class="item_price" id="lang_spec_connect_cont">BLE, remote controller</td>
+                                                    <td class="item_name" id="lang_spec_connect">無線遙控方式</td>
+                                                    <td class="item_price" id="lang_spec_connect_cont">紅外線遙控、藍芽</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name" id="lang_spec_dimension">Dimension</td>
-                                                    <td class="item_price" id="lang_spec_dimension_cont">415mm(W) x 188mm (L) x 540mm (H)</td>
+                                                    <td class="item_name" id="lang_spec_dimension">機身尺寸</td>
+                                                    <td class="item_price" id="lang_spec_dimension_cont">415mm(寬) x 188mm (長) x 540mm (高)</td>
                                                 </tr>
                                                 <tr class="cart_item">
-                                                    <td class="item_name" id="lang_spec_weight">Weight</td>
+                                                    <td class="item_name" id="lang_spec_weight">機體重量</td>
                                                     <td class="item_price" id="lang_spec_weight_cont">6.5 KG</td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                 </div>
-                            </div>                             
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+</div>
+                            </div>
         </section>
         <footer class="content_nopad bg_deepocean">
             <div class="container footer_1-1">
