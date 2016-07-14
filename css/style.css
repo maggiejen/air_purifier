@@ -19,6 +19,29 @@ h5, .h5 {
   color: #727171;
 }
 
+@media (max-width: 767px) {
+}
+
+@media (max-width: 480px) {
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  body{
+    margin: 0 ;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+}
+
+@media (min-width: 980px) {
+}
+
+@media (min-width: 1200px) {
+}
+
 .DOWNLOAD{
   padding: 100px 0;
 
