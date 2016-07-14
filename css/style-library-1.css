@@ -783,7 +783,7 @@ body
 
 .min-height-600px
 {
-    min-height: 600px !important;
+    min-height: 800px !important;
 }
 
 .min-height-700px
@@ -1025,6 +1025,7 @@ ul.circle li:before
 
 img
 {
+    vertical-align: middle;
 }
 
 /*===================================================================================*/
@@ -1962,24 +1963,23 @@ fieldset[disabled] .form-control
 /* Small Devices, Tablets */
 
 @media only screen and (min-width : 768px){
-	
-	
-	
+
+
+
 }
 
 /* Medium Devices, Desktops */
 
 @media only screen and (min-width : 992px){
-	
-	
-	
+
+
+
 }
 
 /* Large Devices, Wide Screens */
 
 @media only screen and (min-width : 1200px){
-	
-	
-	
-}
 
+
+
+}
