@@ -1,9 +1,17 @@
 
 
 /* EQL Template_last updated 2016-06-22 */
+/* 引入中文字型 */
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
+.tw {
+  font-family: 'Palanquin','cwTeXHei',"微軟正黑體", sans-serif;
+}
+
+/* EQL Template_last updated 2016-06-22 */
 
 html, body {
-	font-family: 'Palanquin', sans-serif;
+        font-family: 'Palanquin','cwTeXHei',"微軟正黑體", sans-serif;
 }
 
 
@@ -99,7 +107,7 @@ html, body {
 		min-width:100%;
 		max-height:100%;
 	}
-
+/*
 	@media (max-width:768px){
 		.carousel-inner {
 			min-height:440px;
@@ -117,6 +125,7 @@ html, body {
 		.carousel-inner img {
 			margin-left:-50%;
 		}
+*/
 	}
 
 
