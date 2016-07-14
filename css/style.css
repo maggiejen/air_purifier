@@ -1,5 +1,12 @@
 /* EQL Template_last updated 2016-06-22 */
 
+/* 引入中文字型 */
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+
+.tw {
+  font-family: 'Palanquin','cwTeXHei',"微軟正黑體", sans-serif;
+}
+
 .DOWNLOAD{
   padding: 100px 0;
 
