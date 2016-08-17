@@ -2,12 +2,11 @@
 <html lang="en" style="height:100%;" wp-site wp-site-is-master-page>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>EQL - Homie | AIR PURIFIER</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="pinegrow, blocks, bootstrap" />
-        <meta name="description" content="EQL brings you an easier and smarter lifestyle" />
-        <link rel="shortcut icon" href="images/favicon.ico">
+        <meta name="description" content="My new website" />
+        <link rel="shortcut icon" href="ico/favicon.png">
         <!-- Core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -15,6 +14,7 @@
         <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
         <!-- Style Library -->
         <link href="css/style-library-1.css" rel="stylesheet">
+        <link href="css/plugins.css" rel="stylesheet">
         <link href="css/blocks.css" rel="stylesheet">
         <link href="css/custom.css" rel="stylesheet">
         <link href="css/eql_temp.css" rel="stylesheet">
@@ -42,21 +42,26 @@
                         </a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" aria-expanded="false">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
                         <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="http://www.eqltech.com/">
+                                    <img src="images/nav_home.png" style="margin-top:4px" class="img-responsive" onmouseover="this.src='images/nav_home_hover.png'" onmouseout="this.src='images/nav_home.png'" alt="home">
+                                </a>
+                            </li>
                             <li>
                                 <a href="#" data-id="how" id="lang_navlink1">功能特色<span class="sr-only">(current)</span></a>
                             </li>
                             <li>
-                                <a href="#" data-id="load" id="lang_navlink2">下載支援</a>
+                                <a href="#" data-id="spec" id="lang_navlink3">規格</a>
                             </li>
                             <li>
-                                <a href="#" data-id="spec" id="lang_navlink3">產品規格</a>
+                                <a href="#" data-id="load" id="lang_navlink2">下載</a>
                             </li>
-                            <!--
+                            <!-- 語系切換
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="change_dropdown_title" data-pg-id="284">EN - English<b class="caret" data-pg-id="335"></b></a>
-                                <ul class="dropdown-menu" data-pg-id="336">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="change_dropdown_title">EN - English<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
                                     <li data-pg-id="337">
                                         <a href="#" onclick="chg_lang(0)" data-pg-id="338">TW - 繁體中文</a>
                                     </li>
@@ -68,9 +73,12 @@
                                     </li>
                                 </ul>
                             </li>
+-->
+                            <!-- order button
                             <li>
-                                <button type="button" value="order" onclick="window.open('https://www.91app.com/')" class="btn button navbar-btn btn_order" id="lang_navlink4" data-pg-id="43">Order</button>
-                            </li> -->
+                                <button type="button" value="order" onclick="window.open('https://www.91app.com/')" class="btn button navbar-btn btn_order" id="lang_navlink4">Order</button>
+                            </li>
+-->
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -112,26 +120,52 @@
             <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"><span class="sr-only">Next</span></a>
         </div>
         <section id="content-2-1" class="content-block content-2-1 bg-deepocean">
-            <!--<div class="container text-center">
-                <a href="#" id="lang_preorder" class="btn btn-outline btn-outline-xl outline-light" wp-cz-control="blocks_content_2_1_button_label" wp-cz-control-label="Button Label" wp-cz-control-section="blocks_content_2_1" wp-cz-theme-mod="blocks_content_2_1_button_label" wp-cz-control-2="blocks_content_2_1_button_url" wp-cz-control-label-2="Button Link" wp-cz-control-section-2="blocks_content_2_1" wp-cz-theme-mod-attr="blocks_content_2_1_button_url" wp-cz-theme-mod-attr-set-attr="href" data-pg-id="63"><span class="fa fa-heart pomegranate" data-pg-id="64"></span>Pre-Order</a>
-                <h2 id="lang_preorder_cont" data-pg-id="65">*Add $15 for international shipping. Additional sales tax may apply. Pre-orders will start shipping in July 2016 on a first-come, first-served basis.</h2>
-            </div>-->
-            <!-- /.container -->
-        </section>
-        <section id="how" class="FEATURE min-height-800px bg-white">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
+            <div id="how">
+                <h5>&nbsp; &nbsp;</h5>
+            </div>
+            <div class="container text-center">
+                <div class="underlined-title">
+                    <h1 style="color: #ffffff" id="lang_howitwork_light_title">功能特色</h1>
+                    <hr color="#000000">
+                    <h1></h1>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-1 col-sm-4 col-xs-12">
+                            <img src="images/icon_dc.png" class="center-block img-responsive">
+                            <h6 id="lang_feature_title01">高效能DC直流馬達<br>
+節能又省電</h6>
+                            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi</p>-->
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-12">
+                            <img src="images/icon_hepa13.png" class="center-block img-responsive">
+                            <h6 id="lang_feature_title02">HEPA-13濾網<br>
+過氯殺菌率高達99.97%</h6>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-12">
+                            <img src="images/icon_12layer.png" class="center-block img-responsive">
+                            <h6 id="lang_feature_title03">12層過濾技術<br>
+有效去除坑空氣中各種異味</h6>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12">
+                            <img src="images/icon_magnet.png" class="center-block img-responsive">
+                            <h6 id="lang_feature_title04">吸式磁鐵面板設計<br>
+更換濾網更方便程</h6>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12">
+                            <img src="images/icon_mobilapp.png" class="center-block img-responsive">
+                            <div>
+                                <h6 id="lang_feature_title05">APP智慧管理支援<br>Android 和iOS系統</h6>
+                            </div>
+                        </div>
                         <div class="underlined-title">
-                            <h1> &nbsp;&nbsp;&nbsp;&nbsp;</h1>
-                            <hr>
-                            <h3 style="color: #1D2088" id="lang_howitwork_ap_title">內建藍牙模組</h3>
-                            <h4 id="lang_howitwork_ap_cont">透過手機APP進行遠端操作</h4>
-                            <p id="lang_howitwork_ap_note">* 須配合智能小管家進行遠端遙控</p>
+                            <h1></h1>
                         </div>
                     </div>
+                    <div class="row">
+                        <h1>&nbsp;</h1>
+                    </div>
                 </div>
-            </div>
         </section>
         <section id="content-1-3" class="content-block content-1-3">
             <div class="container">
@@ -146,16 +180,16 @@
                         <div class="services-wrapper">
                             <div class="col-md-4 wp-loop-skip">
                                 <img src="images/red_light.png">
-                                <h5 wp-the-title id="lang_howitwork_light_red">紅燈-空氣不適宜</h5>
+                                <h5 wp-the-title id="lang_howitwork_light_red">不良</h5>
                             </div>
                             <div class="col-md-4" wp-loop-skip>
                                 <img src="images/orange_light.png">
-                                <h5 id="lang_howitwork_light_orange">橘燈-空氣改善中</h5>
+                                <h5 id="lang_howitwork_light_orange">普通</h5>
                                 <p></p>
                             </div>
                             <div class="col-md-4" wp-loop-skip>
                                 <img src="images/green_light.png">
-                                <h5 id="lang_howitwork_light_green">綠燈-新鮮空氣</h5>
+                                <h5 id="lang_howitwork_light_green">良好</h5>
                             </div>
                         </div>
                     </div>
@@ -190,10 +224,104 @@
             </div>
             <!-- /.container -->
         </section>
+        <section class="FEATURE min-height-800px bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="underlined-title">
+                            <h1> &nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                            <hr>
+                            <h3 style="color: #1D2088" id="lang_howitwork_ap_title">內建藍牙模組</h3>
+                            <h4 id="lang_howitwork_ap_cont">透過手機APP進行遠端操作</h4>
+                            <p id="lang_howitwork_ap_note">* 須配合智能小管家進行遠端遙控</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="spec" class="content-block content-3-7">
+            <div class="container">
+                <div class="col-sm-12">
+                    <div class="underlined-title">
+                        <h1 id="product_spec" id="lang_air_spec">&nbsp;&nbsp;&nbsp;<br>規格</h1>
+                        <hr>
+                        <p></p>
+                        <h3 id="lang_spec_title">DC變頻空氣清淨機</h3>
+                        <br>
+                        <p>
+                        <div class="container">
+                            <div class="col-sm-12">
+                                <div class="col-md-8 col-md-offset-2">
+                                    <table class="table table-striped cartTable" width="75%" border="0" cellspacing="0">
+                                        <!--<thead>
+      <tr>
+         <th>Item</th>
+         <th> Description</th>
+
+      </tr>
+   </thead><-->
+                                        <tbody>
+                                            <tr class="cart_item">
+                                                <td id="lang_spec_power">電源</td>
+                                                <td id="lang_spec_power_cont">110V~220V, 60HZ</td>
+                                            </tr>
+                                            <tr class="cart_item">
+                                                <td id="lang_spec_energy">消耗電功率</td>
+                                                <td id="lang_spec_energy_cont">34W</td>
+                                            </tr>
+                                            <tr class="cart_item">
+                                                <td id="lang_spec_speed">多段風速</td>
+                                                <td id="lang_spec_speed_cont">1~9</td>
+                                            </tr>
+                                            <tr class="cart_item">
+                                                <td id="lang_spec_hepa">濾網種類</td>
+                                                <td id="lang_spec_hepa_cont">HEPA-13</td>
+                                            </tr>
+                                            <tr class="cart_item">
+                                                <td class="item_name" id="lang_spec_clearnair">潔淨風量值</td>
+                                                <td id="lang_spec_cleanair_cont">高效率三合一HEPA濾網</td>
+                                            </tr>
+                                            <tr class="cart_item">
+                                                <td id="lang_spec_automode">變速空氣品質自動偵測</td>
+                                                <td id="lang_spec_automode_cont">Yes</td>
+                                            </tr>
+                                            <tr class="cart_item">
+                                                <td id="lang_spec_filter">濾網壽命指示燈</td>
+                                                <td id="lang_spec_filter_cont">Yes</td>
+                                            </tr>
+                                            <tr class="cart_item">
+                                                <td id="lang_spec_deodorization">除臭盒</td>
+                                                <td id="lang_spec_deodorization_cont">Yes</td>
+                                            </tr>
+                                            <tr class="cart_item">
+                                                <td id="lang_spec_uv">UV燈</td>
+                                                <td id="lang_spec_uv_cont">Yes</td>
+                                            </tr>
+                                            <tr class="cart_item">
+                                                <td id="lang_spec_connect">無線遙控方式</td>
+                                                <td id="lang_spec_connect_cont">紅外線遙控、藍芽</td>
+                                            </tr>
+                                            <tr class="cart_item">
+                                                <td id="lang_spec_dimension">機身尺寸</td>
+                                                <td id="lang_spec_dimension_cont">415mm(寬) x 188mm (長) x 540mm (高)</td>
+                                            </tr>
+                                            <tr class="cart_item">
+                                                <td id="lang_spec_weight">機體重量</td>
+                                                <td id="lang_spec_weight_cont">6.5 KG</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+</div>
+                            </div>
+        </section>
         <section id="load" class="content-block team-1 team-1-1">
             <div class="container">
                 <div class="underlined-title">
-                    <h1 id="lang_download_title">&nbsp;&nbsp;&nbsp;<br>DOWNLOAD</h1>
+                    <h1 id="lang_download_title">&nbsp;&nbsp;&nbsp;<br>下載</h1>
                     <hr>
                     <p></p>
                     <img src="images/download_title.jpg" />
@@ -215,7 +343,7 @@
                         <div style="border: 1px solid #00AEEF; background-color:white; border-radius:0px;">
                             <img src="images/download_icon02.jpg" class="img-responsive">
                             <img src="images/download_qr01.jpg" class="img-responsive">
-                            <h2 id="lang_download_iostore_title">Iphone</h2>
+                            <h2 id="lang_download_iostore_title">iphone</h2>
                             <h5>支援OS 8.4及以上版本</h5>
                             <br>
                             <br>
@@ -236,7 +364,7 @@
                             <a href="#" target="_blank" class="BUTTON_BOX" style="margin-top:20px;" id="lang_download_storebutton_text">下載</a>
                         </div>
                     </div>
-                </div>
+                </div>                 
                 <div class="col-md-12">
                     <!-- /.team-member-wrap -->
                     <!-- /.team-member-wrap -->
@@ -245,84 +373,6 @@
                 <!-- /.row -->
             </div>
             <!-- /.container -->
-        </section>
-        <section id="spec" class="content-block content-3-7">
-            <div class="container">
-                <div class="col-sm-12">
-                    <div class="underlined-title">
-                        <h1 id="product_spec" id="lang_air_spec">&nbsp;&nbsp;&nbsp;<br>PRODUCT SPEC</h1>
-                        <hr>
-                        <p></p>
-                        <h3 id="lang_spec_title">DC變頻空氣清淨機</h3>
-                        <div class="container">
-                            <div class="col-sm-12">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <table class="table">
-                                        <table class="table table-striped table-hover cartTable" width="100%" border="0" cellspacing="0">
-                                            <!--<thead>
-      <tr>
-         <th>Item</th>
-         <th> Description</th>
-
-      </tr>
-   </thead><-->
-                                            <tbody>
-                                                <tr class="cart_item">
-                                                    <td class="" id="lang_spec_power">電源</td>
-                                                    <td class="" id="lang_spec_power_cont">110V~220V, 60HZ</td>
-                                                </tr>
-                                                <tr class="cart_item">
-                                                    <td class="" id="lang_spec_energy">消耗電功率</td>
-                                                    <td class="" id="lang_spec_energy_cont">34W</td>
-                                                </tr>
-                                                <tr class="cart_item">
-                                                    <td class="" id="lang_spec_speed">多段風速</td>
-                                                    <td class="" id="lang_spec_speed_cont">1~9</td>
-                                                </tr>
-                                                <tr class="cart_item">
-                                                    <td class="" id="lang_spec_hepa">濾網種類</td>
-                                                    <td class="" id="lang_spec_hepa_cont">HEPA-13</td>
-                                                </tr>
-                                                <tr class="cart_item">
-                                                    <td class="item_name" id="lang_spec_clearnair">潔淨風量值</td>
-                                                    <td class="" id="lang_spec_cleanair_cont">高效率三合一HEPA濾網</td>
-                                                </tr>
-                                                <tr class="cart_item">
-                                                    <td class="" id="lang_spec_automode">變速空氣品質自動偵測</td>
-                                                    <td class="" id="lang_spec_automode_cont">Yes</td>
-                                                </tr>
-                                                <tr class="cart_item">
-                                                    <td class="" id="lang_spec_filter">濾網壽命指示燈</td>
-                                                    <td class="" id="lang_spec_filter_cont">Yes</td>
-                                                </tr>
-                                                <tr class="cart_item">
-                                                    <td class="" id="lang_spec_deodorization">除臭盒</td>
-                                                    <td class="" id="lang_spec_deodorization_cont">Yes</td>
-                                                </tr>
-                                                <tr class="cart_item">
-                                                    <td class="" id="lang_spec_uv">UV燈</td>
-                                                    <td class="" id="lang_spec_uv_cont">Yes</td>
-                                                </tr>
-                                                <tr class="cart_item">
-                                                    <td class="" id="lang_spec_connect">無線遙控方式</td>
-                                                    <td class="" id="lang_spec_connect_cont">紅外線遙控、藍芽</td>
-                                                </tr>
-                                                <tr class="cart_item">
-                                                    <td class="" id="lang_spec_dimension">機身尺寸</td>
-                                                    <td class="" id="lang_spec_dimension_cont">415mm(寬) x 188mm (長) x 540mm (高)</td>
-                                                </tr>
-                                                <tr class="cart_item">
-                                                    <td class="" id="lang_spec_weight">機體重量</td>
-                                                    <td class="" id="lang_spec_weight_cont">6.5 KG</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-</div>
-                            </div>
         </section>
         <footer class="content_nopad bg_deepocean">
             <div class="container footer_1-1">
@@ -345,25 +395,22 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-sm-6 col-sm-offset-1">v
+                    <div class="col-sm-6 col-sm-offset-1">
                         <div class="row">
                             <div class="col-md-4">
                                 <h4 style="clear:both">Product</h4>
                                 <ul>
                                     <li>
-                                        <a href="#">EQL</a>
+                                        <a href="http://www.eql.com.tw/EQL_essence/">essence</a>
                                     </li>
                                     <li>
-                                        <a href="#">Homie</a>
+                                        <a href="http://www.eql.com.tw/homieproductline/">Homie</a>
                                     </li>
                                     <li>
-                                        <a href="#">Ripple</a>
+                                        <a href="http://www.eql.com.tw/ripple/">Ripple</a>
                                     </li>
                                     <li>
-                                        <a href="#">Essence</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">PC Stick</a>
+                                        <a href="http://www.eql.com.tw/pc_stick/">PC Stick</a>
                                     </li>
                                 </ul>
                             </div>
@@ -371,10 +418,13 @@
                                 <h4>Service</h4>
                                 <ul>
                                     <li>
-                                        <a href="#">FAQ</a>
+                                        <a href="#"> About Us</a>
                                     </li>
                                     <li>
                                         <a href="#">Contact Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Be a Distributor</a>
                                     </li>
                                 </ul>
                             </div>
@@ -383,18 +433,18 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /.row -->
                 </div>
-                <!-- /.container -->
-                <div class="copyright">
-                    <p>Copyright © 2016 EQL Technology Inc. All rights reserved.</p>
-                </div>
+                <!-- /.row -->
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2016 EQL Technology Inc. All rights reserved.</p>
+            </div>
         </footer>
         <div id="gotop">^
             <br>Top
         </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script>
 		  $(window).scroll(function(){
 		  var win_h = $(document).scrollTop();
@@ -433,13 +483,12 @@
 		  });
 
 		  </script>
-<script src="js/bootstrap.min.js"></script>
-        <!--<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>-->
-        <!--<script src="https://maps.google.com/maps/api/js?sensor=true"></script>-->
-        <!--<script type="text/javascript" src="js/bskit-scripts.js"></script>-->
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+        <script type="text/javascript" src="js/bskit-scripts.js"></script>
         <!--<script src="js/jquery-1.4.4.js"></script>-->
         <!--<script src="js/pic360-1.0.0.js"></script>-->
         <script type="text/javascript" src="js/J_S_Multi_language_LT_v0.9.js"></script>
-        <!--<script src="js/bootstrap.min.js"></script>-->
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
