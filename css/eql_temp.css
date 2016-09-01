@@ -140,39 +140,23 @@ html, body {
 
 /* Button Style-----------------------------------------------------------*/
 
-	.button
-	{
-		display: inline-block;
-		margin-top: 14px;
-		padding: 8px 20px;
-		background: #00C0F3;
-		letter-spacing: 2px;
-		text-decoration: none;
-		text-transform: uppercase;
-		font-weight: 400;
-		font-size: 16px;
-		color: #fff;
-		border-radius: 3px;
-		-webkit-transition: background .3s ease-in-out;
-		-moz-transition: background .3s ease-in-out;
-		transition: background .3s ease-in-out;
-	}
-
-	.button:before
-	{
-	}
-
-	.button:hover
-	{
-		background: #0090F3;
-		color:#fff;
-	}
-
-	a:hover{ text-decoration:none; }
-
-
-
-
+    .button
+    {
+            display: inline-block;
+            margin-top: 14px;
+            padding: 8px 10px;
+            background: #00C0F3;
+            letter-spacing: 1px;
+            text-decoration: none;
+            /*text-transform: uppercase;*/
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+            border-radius: 3px;
+            -webkit-transition: background .3s ease-in-out;
+            -moz-transition: background .3s ease-in-out;
+            transition: background .3s ease-in-out;
+    }
 
 
 
